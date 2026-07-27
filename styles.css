@@ -752,8 +752,34 @@ body.scrolled .nav {
 }
 
 .info-item p {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   font-size: 0.88rem;
+}
+
+.parking-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--accent-primary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+  cursor: pointer;
+}
+
+.parking-link:hover {
+  color: var(--accent-light);
+  transform: translateX(4px);
+}
+
+.parking-link svg {
+  stroke: var(--accent-primary);
+  transition: var(--transition-smooth);
+}
+
+.parking-link:hover svg {
+  stroke: var(--accent-light);
 }
 
 /* ===========================
